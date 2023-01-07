@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body
+    class="font-body-family flex items-center justify-center w-full h-[100vh]"
+  >
+    <div
+      class="main w-[450px]  shadow-[rgba(0, 0, 0, 0.24) 0px 3px 8px] px-10 py-7 text-[#5D5FEF]"
+    >
+      <h1 class="uppercase text-[#5D5FEF] text-4xl text-center font-semibold">
+        Form
+      </h1>
+      <form action="" class="form" name='myForm'>
+        <div class="form-control flex flex-col relative my-4">
+          <div class="relative flex items-center">
+            <i class="fa-regular fa-user absolute left-2"></i>
+            <input
+              type="text"
+              placeholder="UserName"
+              id="username"
+              class="w-full h-[40px] px-10 border-[#D9D9D9] border-solid border-2 outline-none bg-transparent z-10 placeholder:text-[#5D5FEF] placeholder:font-extralight"
+            />
+          </div>
+          <div class="icons">
+            <i class="fas fa-check-circle text-green-700 invisible"></i>
+            <i class="fa-solid fa-circle-xmark text-red-600 invisible"></i>
+          </div>
+          <small class="error-msg text-red-500 hidden">Error message</small>
+        </div>
+        <div class="form-control flex flex-col relative my-4">
+          <div class="relative flex items-center">
+            <i class="fa-regular fa-envelope absolute left-2"></i>
+
+            <input
+              type="email"
+              placeholder="E-mail"
+              id="email"
+              class="w-full h-[40px] px-10 border-[#D9D9D9] border-solid border-2 outline-none placeholder:text-[#5D5FEF] placeholder:font-extralight"
+            />
+          </div>
+          <div class="icons">
+            <i class="fas fa-check-circle text-green-700 invisible"></i>
+            <i class="fas fa-exclamation-circle text-orange-500 invisible"></i>
+            <i class="fa-solid fa-circle-xmark text-red-600 invisible"></i>
+          </div>
+          <small class="error-msg text-red-500 hidden">Error message</small>
+          <small class="warning-msg hidden text-orange-500">Warning</small>
+        </div>
+        <div class="form-control flex flex-col relative my-4">
+          <div class="relative flex items-center">
+            <i class="bx bxs-key absolute left-2"></i>
+            <input
+              type="password"
+              placeholder="Password"
+              id="password"
+              class="w-full h-[40px] px-10 border-[#D9D9D9] border-solid border-2 outline-none placeholder:text-[#5D5FEF] placeholder:font-extralight"
+            />
+          </div>
+          <div class="icons">
+            <i class="fas fa-check-circle text-green-700 invisible"></i>
+            <i class="fas fa-exclamation-circle text-orange-500 invisible"></i>
+            <i class="fa-solid fa-circle-xmark text-red-600 invisible"></i>
+          </div>
+          <small class="error-msg text-red-500 hidden">Error message</small>
+          <small class="warning-msg hidden text-orange-500">Warning</small>
+        </div>
+        <div class="form-control flex flex-col relative my-4">
+          <div class="relative flex items-center">
+            <i class='bx bx-globe absolute left-2'></i>
+            <select
+              name=""
+              id="select"
+              class="w-full h-[40px] px-10 border-[#D9D9D9] border-solid border-2 outline-none"
+            >
+              <option disabled hidden selected>Country</option>
+              <option value="Azerbaijan">Azerbaijan</option>
+              <option value="Spain">Spain</option>
+              <option value="Netherland">Netherland</option>
+            </select>
+          </div>
+          <div class="icons">
+            <i class="fas fa-check-circle text-green-700 invisible"></i>
+            <i class="fa-solid fa-circle-xmark text-red-600 invisible"></i>
+          </div>
+          <small class="error-msg text-red-500 hidden">Error message</small>
+        </div>
+        <h3 class="text-[16px] font-semibold">Level of development</h3>
+        <div class="radio flex items-center justify-between mt-2 relative">
+          <div
+            class="border-[#DADADA] border-[1px] border-solid px-4 py-3 flex items-center gap-x-2"
+          >
+            <input
+              type="radio"
+              id="radio1"
+              name="skills"
+              class="w-5 h-5 "
+            />
+            <label for="radio1">Basic</label>
+          </div>
+          <div
+            class="border-[#DADADA] border-solid border-[1px] px-4 py-3 flex items-center gap-x-2"
+          >
+            <input
+              type="radio"
+              id="radio2"
+              name="skills"
+              class="w-5 h-5 "
+            />
+            <label for="radio2"> Medium</label>
+          </div>
+          <div
+            class="border-[#DADADA] border-solid border-[1px] px-4 py-3 flex items-center gap-x-2"
+          >
+            <input
+              type="radio"
+              id="radio3"
+              name="skills"
+              class="w-5 h-5 "
+            />
+            <label for="radio3">Advanced</label>
+          </div>
+          <small class="error-msg text-red-500 hidden absolute -bottom-5 left-0">Please Check one</small>
+        </div>
+
+        <h3 class="text-[16px] font-semibold mt-6">Programing skills</h3>
+        <div class="flex items-center justify-between mt-2">
+          <div
+            class="border-[#DADADA] border-[1px] border-solid px-4 py-3 flex items-center gap-x-2"
+          >
+            <input
+              type="checkbox"
+              id="check1"
+              name="skills"
+              class="w-5 h-5 "
+            />
+            <label for="check1">Basic</label>
+          </div>
+          <div
+            class="border-[#DADADA] border-solid border-[1px] px-4 py-3 flex items-center gap-x-2"
+          >
+            <input
+              type="checkbox"
+              id="check2"
+              name="skills"
+              class="w-5 h-5 "
+            />
+            <label for="check2"> Medium</label>
+          </div>
+          <div
+            class="border-[#DADADA] border-solid border-[1px] px-4 py-3 flex items-center gap-x-2"
+          >
+            <input
+              type="checkbox"
+              id="check3"
+              name="skills"
+              class="w-5 h-5"
+            />
+            <label for="check3">Advanced</label>
+          </div>
+        </div>
+        <button
+        type="submit"
+          class="register w-full block h-9 bg-[#5D5FEF] uppercase text-center text-[15px] font-bold text-white leading-9 rounded-[5px] mt-6"
+        >
+          Send
+        </button>
+      </form>
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
